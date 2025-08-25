@@ -1,0 +1,122 @@
+/* NIBERT-SIBER Jauris */
+
+/* Défilement fluide */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Arrière-plan général */
+body {
+  background-color: #f1f5f9; /* gris très clair */
+  font-family: 'Lato', sans-serif;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header avec effet sombre sur l'image */
+header {
+  position: relative;
+  background-image: url("../img/vue2.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5em;
+}
+
+.header h1 {
+  position: relative;
+  font-size: 3.2rem;
+  font-family: 'Lobster', cursive;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  color: white;
+}
+
+/* Navigation */
+.nav {
+  margin-bottom: 2rem;
+}
+
+.nav-link {
+  color: #1e3a8a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+/* Titres des sections */
+h1 {
+  font-family: 'Ultra', serif;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+h5{
+    text-align: center;
+}
+/* Articles */
+article {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem auto;
+  transition: transform 0.3s ease;
+}
+article p {
+    text-align: center;
+    margin: 0 auto 1rem;
+    
+}
+
+article:hover {
+  transform: translateY(-5px);
+}
+
+/* Carrousel */
+.carousel-inner img {
+  border-radius: 12px;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Animation des sections au scroll */
+[data-aos] {
+  transition: all 0.6s ease;
+}
+
+/* Petits ajustements responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  article {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
